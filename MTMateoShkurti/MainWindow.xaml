@@ -1,0 +1,30 @@
+﻿<Window x:Class="MTMateoShkurti.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MTMateoShkurti"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing">
+    <Grid Background="#FF271EF7">
+        <Menu VerticalAlignment="Top" Grid.ColumnSpan="3">
+            <MenuItem x:Name="mnuFile" Header="_File">
+                <MenuItem x:Name="mnuNew" Header="_New"/>
+                <MenuItem x:Name="mnuSave" Header="_Save"/>
+                <Separator/>
+                <MenuItem x:Name="mnuExit" Header="E_xit" Click="mnuExit_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="mnuView" Header="_View">
+                <MenuItem x:Name="mnuPlayer" Header="Players" Click="mnuPlayer_Click"/>
+                <MenuItem x:Name="mnuCoach" Header="Coaches" Click="mnuCoach_Click"/>
+                <MenuItem x:Name="mnuManager" Header="Managers" Click="mnuManager_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="mnuHelp" Header="_Help"/>
+        </Menu>
+        <Button x:Name="btnPlayer" Content="SHOW PLAYERS" HorizontalAlignment="Left" Margin="509,126,0,0" VerticalAlignment="Top" Height="105" Width="192"  IsDefault="True" Click="btnPlayer_Click"/>
+        <Button x:Name="btnManagers" Content="SHOW MANAGERS" HorizontalAlignment="Left" Margin="105,126,0,0" VerticalAlignment="Top" Height="105" Width="192" Click="btnManagers_Click"/>
+        <Button x:Name="btnCoaches" Content="SHOW COACHES" HorizontalAlignment="Left" Margin="304,262,0,0" VerticalAlignment="Top" Height="105" Width="192" IsDefault="True" Grid.ColumnSpan="3" Click="btnCoaches_Click"/>
+        <Label Content="Select What You Want To Display "  HorizontalAlignment="Left" Margin="220,50,0,0" VerticalAlignment="Top" Width="376" Height="39" FontSize="25" Foreground="White"/>
+
+    </Grid>
+</Window>
